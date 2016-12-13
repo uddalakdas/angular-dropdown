@@ -1,13 +1,16 @@
 # angular-dropdown-directive
 
-The project contains a scripts folder contains the controllers and directive. 
+The project contains a scripts folder hich contains the controllers and directive. 
 
 In order to use the custom dropdown directive, open the main.html file under views folder and inside the just enter
 
+```
 <dropdown dvlist="driverVehicleList" ng-model="selected" selected="selected">
+```
 
-Here driverVehicleList is a list of drivers and vehicles objects in the following format:
+Here `driverVehicleList` is a list of drivers and vehicles objects in the following format:
  
+```
 $scope.driverVehicleList = [
     	{
     		"driver" : {
@@ -46,7 +49,7 @@ $scope.driverVehicleList = [
     	.
     	. 
     ];
+```
+Also the `ng-model` mentioned inside the tag is the model which will be containing the `selected` value and can be used later.
 
-Also the ng-model mentioned inside the tag is the model which will be containing the selected value and can be used later.
-
-The directive can be used multiple times with same or different data but each directive must have a unique ng-model defined inside it.
+The directive can be used multiple times with same or different data but each directive must have a unique `ng-model` defined inside it.
