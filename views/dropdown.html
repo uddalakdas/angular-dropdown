@@ -1,8 +1,8 @@
 <div class="dropdown custom-list">
-  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="search-btn" style="text-align:left; width: 400px">{{selected}}
-  <span class="caret" style="align:right;"></span></button>
-  <ul class="dropdown-menu scrollable-menu" role="menu">
-  	<input disable-auto-close type="search" ng-model="serchFilter" placeholder="Search"><span class="glyphicon glyphicon-search"></span></input>
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="search-btn" style="text-align:left; width:100%">{{selected}}
+  <span>&nbsp;&nbsp;</span><span class="glyphicon glyphicon-chevron-down" style="float:right;"></span></button>
+  <ul class="dropdown-menu scrollable-menu menu-height" role="menu" style="width:100%;">
+  	<input disable-auto-close type="search" ng-model="serchFilter" placeholder="Search" style="width:95%"><span class="glyphicon glyphicon-search" style="float:right"></span></input>
     <option-content  ng-repeat="item in dvlist | filter: serchFilter" item="item" selected="selected"> </option-content>
   </ul>
   <style>
@@ -16,6 +16,10 @@
   }
   #search-btn:hover {
     background-color: white;
+  }
+  .menu-height {
+    overflow-y: scroll;
+    max-height: 200px;
   }
   </style>
 </div>
