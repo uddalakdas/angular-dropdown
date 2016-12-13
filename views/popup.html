@@ -1,0 +1,40 @@
+<table ng-show="item.driver">
+		<tr>
+			<td><b>Driver</b></td>
+		</tr>
+		<tr>
+			<td>
+				<img src="{{item.driver.imageUrl}}" class = "img-thumbnail rounded float-xs-left" >
+			</td>
+			<td>
+				<ul class="list-group" >
+					<li class="list-group-item" style="border: none">
+							{{item.driver.name}}
+					</li>
+					<li class="list-group-item" style="border: none">
+						{{item.driver.contact}}
+					</li>
+				</ul>
+			</td>
+		</tr>
+</table>
+<table ng-show="item.vehicle">
+	<tr>
+		<td><b>Vehicle</b></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="{{item.vehicle.imageUrl}}" class = "img-thumbnail rounded float-xs-left" >
+		</td>
+		<td>
+			<ul class="list-group" >
+				<li class="list-group-item" style="border: none">
+						{{item.vehicle.id}}
+				</li>
+				<li class="list-group-item" style="border: none">
+					{{item.vehicle.name}}
+				</li>
+			</ul>
+		</td>
+	</tr>	
+</table>

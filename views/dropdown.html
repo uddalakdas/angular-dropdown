@@ -1,0 +1,21 @@
+<div class="dropdown custom-list">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="search-btn" style="text-align:left; width: 400px">{{selected}}
+  <span class="caret" style="align:right;"></span></button>
+  <ul class="dropdown-menu scrollable-menu" role="menu">
+  	<input disable-auto-close type="search" ng-model="serchFilter" placeholder="Search"><span class="glyphicon glyphicon-search"></span></input>
+    <option-content  ng-repeat="item in dvlist | filter: serchFilter" item="item" selected="selected"> </option-content>
+  </ul>
+  <style>
+  .popover {
+      background-color: #143363;
+      color: #ffffff;
+  }
+  .list-group .list-group-item {
+      background-color: #143363;
+      color: #ffffff;
+  }
+  #search-btn:hover {
+    background-color: white;
+  }
+  </style>
+</div>

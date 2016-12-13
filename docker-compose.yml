@@ -1,0 +1,7 @@
+server:
+  build: '.'
+  volumes: 
+    - "$pwd:/code:rw"
+  ports:
+    - "8080:8080"
+  privileged: true
