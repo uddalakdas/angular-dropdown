@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /code
-bower install
+bower --allow-root install
 http-server
